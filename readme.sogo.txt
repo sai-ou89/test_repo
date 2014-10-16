@@ -1,2 +1,2 @@
 hello git
-created by sogo.
+bug-fix by sogo.
