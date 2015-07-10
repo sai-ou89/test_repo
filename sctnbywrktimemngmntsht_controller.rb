@@ -555,7 +555,10 @@ class Work::SctnbywrktimemngmntshtController < ApplicationSrvsUsrController
               if wtmsl_n.rst_dvsn_id then
                 trgt_usr_id ||= nil
                 unless check_data_in_timecard_input_rested_frm_and_rest_day_remain(index,v, wtmsl_n.rst_dvsn_id, trgt_usr_id) then
-                  break
+                  # save change model
+                  if !v[:wrk_time_mngmnt_sht_lbl_id].blank? then
+                    @arr_model_sht.push(v[:wrk_day_clndr_id])
+                  end
                 end
               end
             end
