@@ -554,9 +554,7 @@ class Work::SctnbywrktimemngmntshtController < ApplicationSrvsUsrController
               wtmsl_n = MWrkTimeMngmntShtLbl.by_id(v[:wrk_time_mngmnt_sht_lbl_id])
               if wtmsl_n.rst_dvsn_id then
                 trgt_usr_id ||= nil
-                unless check_data_in_timecard_input_rested_frm_and_rest_day_remain(index,v, wtmsl_n.rst_dvsn_id, trgt_usr_id) then
-                  break
-                end
+                check_data_in_timecard_input_rested_frm_and_rest_day_remain(index,v, wtmsl_n.rst_dvsn_id, trgt_usr_id, sts_sub_timecard_all_time_is_nil)
               end
             end
           end
