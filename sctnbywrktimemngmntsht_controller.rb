@@ -1,7 +1,7 @@
 ##
 # author:: VFA.HungLM
 # since::  2013/12/03
-# copyright:: Copyright 2013-2014 ABLEWORK Co.,Ltd All rights reserved.
+# copyright:: Copyright 2013-2015 ABLEWORK Co.,Ltd All rights reserved.
 ##
 class Work::SctnbywrktimemngmntshtController < ApplicationSrvsUsrController
 
